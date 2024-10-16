@@ -1,0 +1,241 @@
+{
+  "students": [
+    {
+      "username": "test",
+      "email": "test@test.com",
+      "password": "123",
+      "subjects": [],
+      "id": "a664"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "123456"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "a4c2",
+      "name": "CSS",
+      "questions": [
+        {
+          "question": "?Which CSS property is used to change the text color of an element",
+          "answer1": "font-color",
+          "answer2": "text-color",
+          "answer3": "color",
+          "answer4": "font-style",
+          "correctAns": "color"
+        },
+        {
+          "question": "?What does CSS stand for",
+          "answer1": "Computer Style Sheets",
+          "answer2": "Cascading Style Sheets",
+          "answer3": "Creative Style Sheets",
+          "answer4": "Colorful Style Sheets",
+          "correctAns": "Cascading Style Sheets"
+        },
+        {
+          "question": "?Which CSS property controls the size of text",
+          "answer1": "font-size",
+          "answer2": "text-style",
+          "answer3": "text-size",
+          "answer4": "font-style",
+          "correctAns": "font-size"
+        },
+        {
+          "question": "?How do you make each word in a text start with a capital letter using CSS",
+          "answer1": "text-transform: capitalize;",
+          "answer2": "text-style: capitalize",
+          "answer3": "transform: capitalize",
+          "answer4": "font-transform: capitalize",
+          "correctAns": "text-transform: capitalize;"
+        },
+        {
+          "question": "?Which of the following CSS properties is used to change the background color of an element",
+          "answer1": "color",
+          "answer2": " bgcolor",
+          "answer3": "background-color",
+          "answer4": "background-style",
+          "correctAns": "background-color"
+        },
+        {
+          "question": "?Which property is used to add space between the border and the content of an element",
+          "answer1": "margin",
+          "answer2": "border-spacing",
+          "answer3": "padding",
+          "answer4": "spacing",
+          "correctAns": "padding"
+        },
+        {
+          "question": "?How do you select an element with the id \"header\" in CSS",
+          "answer1": " #header",
+          "answer2": " .header",
+          "answer3": "header",
+          "answer4": "*header",
+          "correctAns": "header"
+        },
+        {
+          "question": "?Which CSS property is used to change the font of text",
+          "answer1": "font-family",
+          "answer2": "font-weight",
+          "answer3": "font-style",
+          "answer4": "font-size",
+          "correctAns": "font-family"
+        },
+        {
+          "question": "?What is the default value of the position property in CSS",
+          "answer1": "relative",
+          "answer2": "absolute",
+          "answer3": "fixed",
+          "answer4": "static",
+          "correctAns": "static"
+        },
+        {
+          "question": "?Which property is used to create space between HTML elements",
+          "answer1": "spacing",
+          "answer2": "margin",
+          "answer3": "padding",
+          "answer4": "border",
+          "correctAns": "margin"
+        },
+        {
+          "question": "?Which CSS property is used to make the text bold",
+          "answer1": "font-style",
+          "answer2": "text-decoration",
+          "answer3": "font-weight",
+          "answer4": "font-size",
+          "correctAns": "font-weight"
+        },
+        {
+          "question": "?How do you center a block element horizontally using CSS",
+          "answer1": "text-align: center",
+          "answer2": "align: center",
+          "answer3": "margin: auto",
+          "answer4": "center-align: true",
+          "correctAns": "margin: auto"
+        },
+        {
+          "question": "?Which of the following is NOT a valid value for the display property",
+          "answer1": "inline ",
+          "answer2": "block",
+          "answer3": "hidden",
+          "answer4": "flex",
+          "correctAns": "hidden"
+        },
+        {
+          "question": "?What is the correct way to apply a CSS style to multiple elements with the same class",
+          "answer1": "#classname",
+          "answer2": ".classname",
+          "answer3": "classname",
+          "answer4": "@classname",
+          "correctAns": ".classname"
+        },
+        {
+          "question": "?How do you add a shadow to a text in CSS",
+          "answer1": "text-shadow",
+          "answer2": "font-shadow",
+          "answer3": "text-glow",
+          "answer4": "font-style",
+          "correctAns": "text-shadow"
+        }
+      ]
+    },
+    {
+      "name": "Java Script",
+      "questions": [
+        {
+          "question": "How do you create a function in JavaScript",
+          "answer1": "()function = myFunction",
+          "answer2": "()function  myFunction",
+          "answer3": "()function : myFunction",
+          "answer4": "()create function myFunction",
+          "correctAns": "()function  myFunction"
+        },
+        {
+          "question": "?How do you call a function named myFunction in JavaScript",
+          "answer1": "call myFunction",
+          "answer2": "call function myFunction",
+          "answer3": "()myFunction",
+          "answer4": "()execute myFunction",
+          "correctAns": "()myFunction"
+        },
+        {
+          "question": "?Which operator is used to assign a value to a variable",
+          "answer1": "*",
+          "answer2": "+",
+          "answer3": "=",
+          "answer4": "@",
+          "correctAns": "="
+        },
+        {
+          "question": "?What is the correct way to write an if statement in JavaScript",
+          "answer1": "if i = 5",
+          "answer2": "if i == 5 then",
+          "answer3": "if (i == 5)",
+          "answer4": "if i = 5 then",
+          "correctAns": "if (i == 5)"
+        },
+        {
+          "question": "?How do you add a comment in JavaScript",
+          "answer1": "<!-- This is a comment -->",
+          "answer2": "// This is a comment",
+          "answer3": "## This is a comment",
+          "answer4": "** This is a comment",
+          "correctAns": "// This is a comment"
+        },
+        {
+          "question": "Which of the following is not a JavaScript data type",
+          "answer1": "boolean",
+          "answer2": "any",
+          "answer3": "number",
+          "answer4": "Character",
+          "correctAns": "Character"
+        },
+        {
+          "question": "?Which keyword is used to declare a variable in JavaScript",
+          "answer1": "variable",
+          "answer2": "var",
+          "answer3": "V",
+          "answer4": "declare",
+          "correctAns": "var"
+        },
+        {
+          "question": "?Which of the following is the correct way to declare a variable in JavaScript",
+          "answer1": "variable x",
+          "answer2": "var x",
+          "answer3": "x = var",
+          "answer4": "declare x",
+          "correctAns": "var x"
+        },
+        {
+          "question": "?How do you round the number 7.25 to the nearest integer in JavaScript",
+          "answer1": "Math.round(7.25)",
+          "answer2": "Math.rnd(7.25)",
+          "answer3": "round(7.25)",
+          "answer4": "rnd(7.25)",
+          "correctAns": "Math.round(7.25)"
+        },
+        {
+          "question": "?How do you create a loop that runs as long as i is less than 10 in JavaScript",
+          "answer1": "for i < 10",
+          "answer2": "for (i < 10; i++)",
+          "answer3": "for (i = 0; i < 10; i++)",
+          "answer4": "for i = 1 to 10",
+          "correctAns": "for (i = 0; i < 10; i++)"
+        }
+      ],
+      "id": "de39"
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "role": "doctor",
+      "userID": "1",
+      "id": "1"
+    }
+  ]
+}

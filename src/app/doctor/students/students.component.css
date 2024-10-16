@@ -1,0 +1,16 @@
+:host ::ng-deep .students {
+    padding: 50px 0;
+}
+
+:host ::ng-deep .students table {
+    width: 100%;
+}
+
+:host ::ng-deep .students table thead tr {
+    background-color: #f44336;
+}
+
+:host ::ng-deep .students table thead tr th {
+    color: #FFF;
+    font-size: 22px;
+}

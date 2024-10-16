@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 0;
+    margin: 0 !important;
+}
+
+* {
+    font-family: 'Almarai', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Almarai', sans-serif !important;
+    min-height: 100vh;
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    z-index: -1; 
+}
+.examBox {
+    background: #fff !important;
+    background-color: #fffffff0 !important;
+    box-shadow: 0 2px 10px rgb(255 255 255) !important;
+}
+.examhead > h2{
+    background-color: #345ce1 !important;
+}
+.mat-stepper-horizontal {
+    background-color: #fffffff0 !important;
+    box-shadow: 0 2px 10px rgb(255 255 255) !important;
+}
+.students table thead tr {
+    background-color: #345ce1 !important;
+}

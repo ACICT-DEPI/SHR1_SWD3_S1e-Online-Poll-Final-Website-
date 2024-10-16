@@ -1,0 +1,55 @@
+<div class="examBox">
+    <div class="examhead text-center"><h2>اختبار  {{subject?.name}}</h2></div>
+    <div class="quizBox" *ngFor=" let item of subject?.questions ; let index = index">
+        <strong ><span class="text-danger">سؤال {{index +1}}</span> .  {{item.question}}</strong>
+        <div class="row mt-3" >
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button value="{{item.answer1}}" (change)="getAns($event)" color="warn" name="{{index}}" *ngIf="user?.role == 'students' && !showResult && examCheck"></mat-radio-button>
+                <label>A) {{item.answer1}}</label>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button value="{{item.answer2}}" (change)="getAns($event)" color="warn" name="{{index}}" *ngIf="user?.role == 'students' && !showResult && examCheck"></mat-radio-button>
+                <label>B) {{item.answer2}}</label>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button value="{{item.answer3}}" (change)="getAns($event)"  color="warn" name="{{index}}" *ngIf="user?.role == 'students' && !showResult && examCheck"></mat-radio-button>
+                <label>C) {{item.answer3}}</label>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <mat-radio-button value="{{item.answer4}}" (change)="getAns($event)" color="warn" name="{{index}}" *ngIf="user?.role == 'students' && !showResult && examCheck"></mat-radio-button>
+                <label>D) {{item.answer4}}</label>
+            </div>
+        </div>
+        
+        <div  class="answer-cards text-center mt-3" *ngFor="let status of answersStatus; track $index">
+            @if(index == status.id && status.value){
+                <div class="correctAns col-sm-6 text-center" >
+                    <span class="text-success">الإجابة صحيحة.</span>
+                </div>
+            }@else if (index == status.id && !status.value) {
+                <div class="answer-row d-flex justify-content-center mt-3" >
+                    <div class="wrongAns col-sm-6 text-center">
+                        <span class="text-danger">الإجابة خاطئة.</span>
+                    </div>
+                    <div class="TcorrectAns col-sm-6 text-center" >
+                        <span class="text-center">الإجابة الصحيحة: {{item.correctAns}}</span>
+                    </div>
+                </div> 
+            }
+        </div> 
+
+        <div class="text-start" *ngIf="user?.role == 'doctor'">
+            <!-- <button mat-raised-button class="btn btn-warning" >تعديل</button> -->
+            <button mat-raised-button  class="btn btn-danger" (click)="deleteItem(index)" >حذف</button>
+        </div>
+        <hr>
+    </div>
+    <div class="text-center" *ngIf="user?.role == 'students'">
+        <span *ngIf="showResult || !examCheck" class=" text-center exam-result">نتيجتك: {{this.subject.questions.length}} / {{this.total}}</span>
+        <button *ngIf="!showResult && examCheck" class="btn btn-success px-5 fs-5 " (click)="getResult()"> النتيجة</button>
+    </div>
+
+</div>
