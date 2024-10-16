@@ -1,3 +1,7 @@
+IMPORTANT NOTE!!!!!
+PLEASE open the file with name READ ME FIRST and follow the steps to run the project properly
+
+
 # Exam
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
